@@ -1,0 +1,42 @@
+{
+  "name": "@mntm/metrika",
+  "version": "2.1.1",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "jsnext:main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Anton Petrov",
+    "email": "im@petrov.engineer",
+    "url": "https://petrov.engineer"
+  },
+  "description": "Analytics for VK Mini Apps.",
+  "license": "MIT",
+  "keywords": [
+    "vk",
+    "vkontakte",
+    "vkcom",
+    "vkapps",
+    "vk-apps",
+    "analytics",
+    "metrika"
+  ],
+  "homepage": "https://github.com/maxi-team/metrika",
+  "bugs": "https://github.com/maxi-team/metrika/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxi-team/router.git"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "uuid-random": "^1.3.2"
+  },
+  "devDependencies": {
+    "@mntm/eslint-config": "^0.2.0",
+    "eslint": "^7.8.0",
+    "typescript": "^4.0.2"
+  }
+}
