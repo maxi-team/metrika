@@ -41,7 +41,7 @@ export const stringify = (obj: TrackerParams) => {
   return result;
 };
 
-const hostScheme = /(https?:)|(^)\/\//;
+const hostScheme = /((https?:)|^)(\/\/)?/;
 export const getHostWithProtocol = (url: string) => {
   return url.replace(hostScheme, '//');
 };
