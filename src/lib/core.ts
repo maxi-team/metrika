@@ -20,9 +20,9 @@ export class Tracker {
   private _ctx: TrackerParams;
 
   constructor(options: TrackerOptions) {
-    this._host = getHostWithProtocol(options.host || 'collector.metrika.mini-team.space');
+    this._host = getHostWithProtocol(options.host || 'an.all.mini-team.space');
     this._key = options.key || 'NONE';
-    this._randomize = !!options.randomize;
+    this._randomize = options.randomize === false ? false : true;
 
     const anonymousId = generateId();
     const launchParams = getLaunchParams(window.location.search.slice(1));
